@@ -1,96 +1,76 @@
-**Readme**
+**Malaria Community Standard – Collection template and associated materials for malaria metadata**
 
-**Malaria-Community-Metadata-Standard**
+Publication(s) DOI(s).
 
-**Overview**
+**Malaria contextual data specification overview**
 
-Malaria remains a major cause of morbidity and mortality globally, with the highest burden borne by countries in sub-Saharan Africa. Malaria epidemiology is increasingly influenced by the emergence and spread of antimalarial drug resistance in *Plasmodium falciparum* and insecticide resistance in *Anopheles* vectors, threatening recent gains in control. Genomic surveillance has therefore become central to monitoring parasite population structure, detecting resistance-associated mutations and haplotypes, and informing evidence-based control and elimination strategies. Advances in whole-genome sequencing (WGS) and other high-throughput genomic technologies have transformed our ability to investigate transmission dynamics and track the geographic spread of resistance. However, the full value of malaria genomic data can only be realized when it is accompanied by high-quality, harmonized, and context-aware metadata.
+Public health genomics contextual data for malaria integrates epidemiological, clinical, geographic, laboratory, and sequencing metadata. This contextual data enables interpretation of genomic surveillance outputs, informs malaria control and elimination strategies, reveals parasite population dynamics, resistance emergence, and transmission patterns, and facilitates scientific understanding of malaria disease. Standardized contextual data supports data integration, reuse, and public health decision‑making across surveillance systems.
 
-This repository contains the **Malaria Community Metadata Standard**, a structured and interoperable framework designed to support malaria genomic surveillance and epidemiology. The standard aims to enable consistent data capture, improve interoperability across studies and platforms, and facilitate meaningful comparison, integration, and reuse of malaria genomic datasets across endemic settings.
+The malaria contextual data specification addresses gaps in existing general (MIxS) and pathogen‑specific standards by capturing malaria‑specific complexities – vector ecology, transmission dynamics, and health system factors in endemic settings. Supporting materials include harmonized collection templates for human clinical/One Health and mosquito vector samples, controlled vocabularies, reference guides, and mapping to existing standards. All resources are openly available and detailed below.
 
-**Background**
+**Content description**
 
-**Malaria**
+**Malaria contextual data specification package**
 
-Malaria is a life-threatening parasitic disease caused by protozoa of the genus *Plasmodium* and transmitted to humans through the bites of infected female *Anopheles* mosquitoes. Five *Plasmodium* species infect humans, with *P. falciparum* and *P. vivax* responsible for the greatest global burden. *Plasmodium* *falciparum* accounts for most severe disease and mortality, particularly in sub-Saharan Africa, while *P. vivax* predominates in many regions outside Africa. Clinical presentations range from uncomplicated febrile illness to severe complications such as profound anaemia, respiratory distress, cerebral malaria, and multiorgan failure. Young children, pregnant women, travellers, and immunocompromised individuals remain at highest risk. Despite significant progress in control efforts, malaria continues to cause hundreds of millions of cases and over half a million deaths annually, with the overwhelming majority occurring in the African Region.
+Spreadsheet-based (.xlsx) human clinical/One Health collection template (link)
 
-Malaria epidemiology is increasingly shaped by heterogeneous transmission dynamics and by the emergence and spread of antimalarial drug resistance in *P. falciparum* and insecticide resistance in *Anopheles* vectors, threatening recent gains in control. Genomic epidemiology has therefore become a critical tool to:
+Spreadsheet-based (.xlsx) mosquito vector collection template (link)
 
-* Characterize parasite population structure and genetic diversity
-* Detect and monitor resistance-associated mutations and haplotypes
-* Track transmission patterns and cross-border spread
-* Inform targeted control and elimination strategies.
+Core components (Spreadsheet tabs):
 
-Large volumes of *Plasmodium* genomic data are now available through global repositories and surveillance networks. However, robust metadata describing the hosts, epidemiological context, geographic and temporal factors, sample characteristics, and laboratory and analytical processes and results are essential to interpret genomic findings accurately and to place them within meaningful public health and transmission contexts. Without standardized and harmonized contextual data, malaria genomic datasets remain difficult to integrate, compare, and reuse across studies, regions, and surveillance systems.
+1. **Data collection template**: A structured sheet for entering full metadata sets, featuring "required" fields (yellow), "strongly recommended" fields (purple) and "optional" fields (white).
+2. **User reference guide:** Detailed instructions, field definitions, population tips, and real-world examples to streamline template completion.
+3. **Controlled vocabulary lists:** Malaria experts/PHA4GE-approved; ontology-linked term lists for dropdown selection, promoting consistent data entry.
 
-**Metadata Standards in Genomic Epidemiology**
+**Machine-Readable JSON Template (link)**
 
-Metadata standards define a common structure, vocabulary, and set of expectations for describing data. In genomic epidemiology, standardized metadata:
+An automated JSON version of the MCS template, optimized for programmatic use. "Required" fields are enforced as mandatory, while "strongly recommended" and "optional" fields remain non-mandatory (with minor adjustments due to JSON constraints).
 
-* Improves data quality and completeness
-* Enables interoperability across databases, tools, and studies
-* Facilitates data sharing and reuse in line with FAIR principles (Findable, Accessible, Interoperable, Reusable)
-* Supports reproducibility and transparent interpretation of results
+**Standard operating procedure (SOP)**
 
-Without standardized metadata, genomic datasets are difficult to integrate, compare, or interpret beyond their original study context. Developing a domain-specific metadata standard for malaria ensures that critical clinical and epidemiological variables are captured in a consistent and meaningful way.
+Step-by-step guidelines for template use, term selection, sample description formatting, and key considerations for ethics, practicality, and data privacy. **Available at…** (link).
 
-**Scope**
+**Supporting materials**
 
-This metadata standard is intended to support malaria genomic surveillance and epidemiological studies by defining a harmonized set of metadata elements covering infecting Plasmodium species; diverse sample and host types; associated clinical, epidemiological, and laboratory data; tiled amplicon, targeted (e.g., bait-capture), and shotgun metagenomic sequencing approaches; and genotyping information. The standard is designed for use in research, public health surveillance, and data-sharing initiatives.
+- **MCS to PHA4GE SARS-CoV-2 contextual data specification field mappings (link):** Aligns MCSs fields with the SARS-CoV-2 metadata for genomic surveillance.
+- **MCS to MPOX metadata specification field mappings (link):** Aligns MCSs fields with the MPOX metadata for genomic surveillance.
+- **MCS to Repository field mappings (link):** Crosswalks MCS fields to submission forms for ENA and NCBI, facilitating data export and transformation.
 
-This standard:
+**JSON Specification Generation**
 
-* Focuses on metadata accompanying pathogen genomic data related to malaria
-* Is applicable across diverse geographic, laboratory, and healthcare settings
-* Supports retrospective and prospective genomic studies
+The JSON schema (link) is generated automatically from a csv template (link) via scripts in MCS JSON repository (link).
 
-This standard is **not** intended to:
+**Table 1 MCS field specification**
 
-* Replace clinical diagnostic criteria or treatment guidelines
-* Serve as a comprehensive electronic health record schema
-* Function as a regulatory or clinical decision-support tool
+| **Column**        | **Description**                                                                   |
+| ----------------- | --------------------------------------------------------------------------------- |
+| Interface Label   | Header names in the MCS template.                                                 |
+| ---               | ---                                                                               |
+| Required/Optional | Classification as "Required," "Recommended," or "Optional" per MCS standards.     |
+| ---               | ---                                                                               |
+| Definition        | Concise explanation of the field's purpose.                                       |
+| ---               | ---                                                                               |
+| Ontology          | Associated ontology identifier.                                                   |
+| ---               | ---                                                                               |
+| Value Type        | Permitted formats: (e.g., "String," "Date," "Integer_or_Range," "BioProject_ID"). |
+| ---               | ---                                                                               |
+| Example           | Sample valid entry.                                                               |
+| ---               | ---                                                                               |
+| Guidance          | In-depth notes for accurate completion.                                           |
+| ---               | ---                                                                               |
 
-**Purpose of This Repository**
+**Acknowledgment**
 
-This repository serves as the authoritative home for the Malaria Community Metadata Standard and its supporting materials. It is intended for use by researchers, clinicians, public health professionals, and data stewards working in genomic epidemiology and malaria health.
+Abhinav Sharma, Alan Christoffels, Andrew Balmer, Arsene Bokulu, Bacha Mekonen, Bernard Aniakwo Logonia, Bernardete Rafael, Betselot Z Ayano, Charmaine Matimba, Christoph Cyranski, David Oladejo, Dilyet Girmay, Dominique Anderson, Tafese Beyene Tufa, Eddie Tshikala Lulamba, Emilyn Costa Conceicao, Emma Griffiths, Francis Farai Chikuse, Francis Mubigalo, Hannah Faber, Hannah Jauncey, Jaishree Raman, Jennie Lee, John Magudha, Katairo Thomas, Kedir Abdella Abdulsemed, Latifah Mukanga, Lauren Fromont, Mehul Dhorda, Michele A Miller, Michelle Parker, Nalia Ismael, Nawaal Weitz, Nicholas Hathaway, Nina White, Palesa Makoti, Paulo Arnaldo, Prince Asare, Rekha Sathyan, Richard Pearson, Sarah Cooke, Selam Yirga, Stanford Kwenda, Stefanie Hatchell, Susan Alicia Fisher, Tahita Marc Christian, Victoire Nsabatien, Vito Baraka, on behalf of the Public Health Alliance for Genomic Epidemiology (PHA4GE) consortium and GenEpi Network/Data Standards & Data Integration working group.
 
-Specifically, this repository aims to:
+**Contacts**
 
-* Provide a clear and well-documented metadata specification for malaria genomic surveillance and epidemiological studies
-* Support consistent implementation of the standard across projects and institutions
-* Enable testing, validation, and iterative improvement of the standard
-* Promote transparency and community engagement in standard development.
-
-**Repository Contents**
-
-This repository includes the following components:
-
-* **Metadata Dictionaries** The core definition of the malaria metadata standard, including fields, descriptions, data types, and controlled vocabularies where applicable.
-* **Metadata Template** Metadata template in Excel format to support implementation and adoption by users.
-* **Documentation** Supporting documentation explaining design decisions, scope, assumptions, and intended use cases.
-* **Versioning and Change History** Records of updates, revisions, and known issues to support traceability and long-term maintenance.
-
-**Intended Audience**
-
-This repository is intended for:
-
-* Genomic epidemiology researchers studying malaria
-* Clinical and public health teams generating or using pathogen genomic data
-* Bioinformaticians and data managers implementing metadata standards
-* Standards developers and stakeholders interested in malaria health data harmonization
-
-**Contributing and Feedback**
-
-Contributions, feedback, and issue reports are welcome. Community input is essential to ensure the metadata standard remains relevant, practical, and scientifically robust. Please see the contribution guidelines for details on how to get involved.
+For support, reach out to [elulamba@pha4ge.org](mailto:elulamba@pha4ge.org) or the repository's issue tracker.
 
 **Citation**
 
-If you use, adapt, or reference this metadata standard in your work, please credit:
-
-**Public Health Alliance for Genomic Epidemiology (PHA4GE)**
-
-A formal citation and citation file (CITATION.cff) may be added in future releases.
+Tshikala Eddie Lulamba, Dominique Anderson, Francis Mubigalo, Bacha Mekonen, Susan Alicia Fisher, Nalia Ismael, Stanford Kwenda, Vito Baraka, Francis Farai Chikuse, Jaishree Raman, Mehul Dhorda, Nicholas Hathaway, Emma Griffiths, Nina White, Hannah Jauncey, Bernardete Rafael, Jennie Lee, David Oladejo, Andrew Balmer, Paulo Arnaldo, Sarah Cooke, Richard Pearson, Stephanie Van Wyk, Thomas Katairo, Alan Christoffels (DOI)
 
 **License**
 
-License information is provided in this repository.
+MIT License (link).
