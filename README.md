@@ -73,4 +73,5 @@ Tshikala Eddie Lulamba, Dominique Anderson, Francis Mubigalo, Bacha Mekonen, Sus
 
 **License**
 
-[MIT License.]([url](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/blob/main/LICENSE))
+[MIT License.](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/blob/main/LICENSE)
+
