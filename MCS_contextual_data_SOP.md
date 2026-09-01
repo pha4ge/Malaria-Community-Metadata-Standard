@@ -499,5 +499,5 @@ For more information and/or assistance, contact [elulamba@pha4ge.org](mailto:elu
 
 | Version | Date | Writer | Description of change |
 |---|---|---|---|
-| 0.0 | August xxx, 2026 | Tshikala Eddie Lulamba, Susan Alicia Fernol | Created protocol |
-| 1.0 | xxx |  |  |
+| 0.0 | August 31, 2026 | Tshikala Eddie Lulamba, Susan Alicia Fernol | Created protocol |
+|  |  |  |  |
