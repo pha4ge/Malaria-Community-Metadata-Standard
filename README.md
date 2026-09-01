@@ -1,30 +1,22 @@
 # Malaria Community Standard – Collection template and associated materials for malaria metadata
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Publication(s) DOI. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-
-## PHA4GE overview
-
-The Public Health Alliance for Genomic Epidemiology ([PHA4GE](https://pha4ge.org)) is a global coalition that is actively working to establish consensus standards, document and share best practices, improve the availability of critical bioinformatic tools and resources, and advocate for greater openness, interoperability, accessibility and reproducibility in public health microbial bioinformatics.
-
-In the face of the current SARS-CoV-2 pandemic, [PHA4GE](https://pha4ge.org) has identified a clear and present need for a fit-for-purpose, open source SARS-CoV-2 contextual data standard. As such, we have developed a SARS-CoV-2 contextual data specification based on harmonizable, publicly available, community standards.
 
 ## Malaria contextual data specification overview
-Public health genomics contextual data for malaria integrates epidemiological, clinical, geographic, laboratory, and sequencing metadata. This contextual data enables interpretation of genomic surveillance outputs, informs malaria control and elimination strategies, reveals parasite population dynamics, resistance emergence, and transmission patterns, and facilitates scientific understanding of malaria disease. Standardized contextual data supports data integration, reuse, and public health decision‑making across surveillance systems.
 
+Public health genomics contextual data for malaria integrates epidemiological, clinical, geographic, laboratory, and sequencing metadata. This contextual data enables interpretation of genomic surveillance outputs, informs malaria control and elimination strategies, reveals parasite population dynamics, resistance emergence, and transmission patterns, and facilitates scientific understanding of malaria disease. Standardized contextual data supports data integration, reuse, and public health decision‑making across surveillance systems.
 The malaria contextual data specification addresses gaps in existing general (MIxS) and pathogen‑specific standards by capturing malaria‑specific complexities – vector ecology, transmission dynamics, and health system factors in endemic settings. Supporting materials include harmonized collection templates for human clinical/One Health and mosquito vector samples, controlled vocabularies, reference guides, and mapping to existing standards. All resources are openly available and detailed below.
 
 ## Content description
 
 ### Malaria contextual data specification package
 
-#### [Spreadsheet-based (.xlsx) human clinical/One Health collection template](MalariaCommunityStandard_human_v2_0_0.xlsx)
+Spreadsheet-based (.xlsx) [human clinical/One Health collection template](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/edit/v0.1/README.md#:~:text=MCS_contextual_data_SOP.md-,MalariaCommunityStandard_human_v2_0_0,-.xlsx);
+Spreadsheet-based (.xlsx) [mosquito vector collection template](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/edit/v0.1/README.md#:~:text=MalariaCommunityStandard_human_v2_0_0.xlsx-,MalariaCommunityStandard_mosquito_v2_0_0,-.xlsx).
 
-#### [Spreadsheet-based (.xlsx) mosquito vector collection template](MalariaCommunityStandard_mosquito_v2_0_0.xlsx)
-
-It contains the following items (tabs in the spreadsheet):
-
+Core components (Spreadsheet tabs):
 1. **Data collection template:**
 
 A structured sheet for entering full metadata sets, featuring "required" fields (yellow), "strongly recommended" fields (purple) and "optional" fields (white).
@@ -35,11 +27,11 @@ Detailed instructions, field definitions, population tips, and real-world exampl
 
 3. **Controlled vocabulary lists**
 
-Malaria experts/PHA4GE-approved; ontology-linked term lists for dropdown selection, promoting consistent data entry.
+Malaria experts-approved; ontology-linked term lists for dropdown selection, promoting consistent data entry.
 
 #### [Machine-Readable JSON Template](https://github.com/pha4ge/malaria-data-spec-json)
 
-An automated JSON version of the MCS template, optimized for programmatic use. *Required* fields are enforced as mandatory, while *strongly recommended* and *optional* fields remain non-mandatory (with minor adjustments due to JSON constraints).
+An automated JSON version of the MCS template, optimized for programmatic use. “Required” fields are enforced as mandatory, while “strongly recommended” and “optional” fields remain non-mandatory (with minor adjustments due to JSON constraints).
 
 ### Standard operating procedure (SOP)
 
@@ -78,7 +70,7 @@ The [JSON schema](#) is generated automatically from a [csv template](#) via scr
 
 ## Contacts
 
-For support, reach out to`elulamba@pha4ge.org` or the repository's issue tracker..
+For support, reach out to`elulamba@pha4ge.org` or the repository's issue tracker.
 
 ## Acknowledgement
 
