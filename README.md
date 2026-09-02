@@ -78,7 +78,7 @@ For support, reach out to`elulamba@pha4ge.org` or the repository's issue tracker
 Abhinav Sharma, Alan Christoffels, Andrew Balmer, Arsene Bokulu, Bacha Mekonen, Bernard Aniakwo Logonia, Bernardete Rafael, Betselot Z Ayano, Charmaine Matimba, Christoph Cyranski, David Oladejo, Dilyet Girmay, Dominique Anderson, Tafese Beyene Tufa, Eddie Tshikala Lulamba, Emilyn Costa Conceicao, Emma Griffiths, Francis Farai Chikuse, Francis Mubigalo, Hannah Faber, Hannah Jauncey, Jaishree Raman, Jennie Lee, John Magudha, Katairo Thomas, Kedir Abdella Abdulsemed, Latifah Mukanga, Lauren Fromont, Mehul Dhorda, Michele A Miller, Michelle Parker, Nalia Ismael, Nawaal Weitz, Nicholas Hathaway, Nina White, Palesa Makoti, Paulo Arnaldo, Prince Asare, Rekha Sathyan, Richard Pearson, Sarah Cooke, Selam Yirga, Stanford Kwenda, Stefanie Hatchell, Susan Alicia Fisher, Tahita Marc Christian, Victoire Nsabatien, Vito Baraka, on behalf of the Public Health Alliance for Genomic Epidemiology (PHA4GE) consortium and GenEpi Network/Data Standards & Data Integration working group.
 
 ## Citation
-Tshikala Eddie Lulamba, Dominique Anderson, Francis Mubigalo, Bacha Mekonen, Susan Alicia Fisher, Nalia Ismael, Stanford Kwenda, Vito Baraka, Francis Farai Chikuse, Jaishree Raman, Mehul Dhorda, Nicholas Hathaway, Emma Griffiths, Nina White, Hannah Jauncey, Bernardete Rafael, Jennie Lee, David Oladejo, Andrew Balmer, Paulo Arnaldo, Sarah Cooke, Richard Pearson, Stephanie Van Wyk, Thomas Katairo, Alan Christoffels (DOI)
+
 
 ## License
 
