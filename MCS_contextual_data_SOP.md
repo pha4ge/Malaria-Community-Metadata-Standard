@@ -11,7 +11,7 @@ Please note that this protocol is public domain, which supersedes the CC-BY lice
 
 The systematic curation of contextual information is essential for malaria genomic surveillance, public health investigations, and responsible data stewardship. It helps preserve the long-term value, interoperability, and reusability of genomic and epidemiological datasets.
 
-This protocol presents guidance for organizing malaria-related information using the Malaria Community Standard contextual data collection template, with the aim of improving consistency and harmonization across laboratories, surveillance initiatives, datasets, and information systems.
+This protocol presents guidance for organizing malaria-related information using the Malaria Community Metadata Standard (MCMS) contextual data collection template, with the aim of improving consistency and harmonization across laboratories, surveillance initiatives, datasets, and information systems.
 
 The template comprises a data-entry collection template, a field reference guide containing definitions, guidance and examples, and a sheet of controlled vocabularies that support the use of consistent terminology.
 
