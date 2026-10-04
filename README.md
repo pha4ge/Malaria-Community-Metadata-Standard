@@ -1,4 +1,4 @@
-# Malaria Community Standard – Collection template and associated materials for malaria metadata
+# Malaria Community Metadata Standard (MCMS)– Collection template and associated materials for malaria metadata
 
 Publication(s) DOI. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -32,7 +32,7 @@ Malaria experts-approved; ontology-linked term lists for dropdown selection, pro
 
 #### [Machine-Readable JSON Template](https://github.com/pha4ge/malaria-data-spec-json)
 
-An automated JSON version of the MCS template, optimized for programmatic use. “Required” fields are enforced as mandatory, while “strongly recommended” and “optional” fields remain non-mandatory (with minor adjustments due to JSON constraints).
+An automated JSON version of the MCMS template, optimized for programmatic use. “Required” fields are enforced as mandatory, while “strongly recommended” and “optional” fields remain non-mandatory (with minor adjustments due to JSON constraints).
 
 ### Standard operating procedure (SOP)
 
@@ -40,28 +40,28 @@ Step-by-step guidelines for template use, term selection, sample description for
 
 ### Supporting materials
 
-[**MCS to PHA4GE SARS-CoV-2 contextual data specification field mappings:**](#)
+[**MCMS to PHA4GE SARS-CoV-2 contextual data specification field mappings:**](#)
 
-Aligns MCSs fields with the SARS-CoV-2 metadata for genomic surveillance.
+Aligns MCMSs fields with the SARS-CoV-2 metadata for genomic surveillance.
 
-[**MCS to MPOX metadata specification field mappings:**](#)
+[**MCMS to MPOX metadata specification field mappings:**](#)
 
-Aligns MCSs fields with the MPOX metadata for genomic surveillance.
+Aligns MCMSs fields with the MPOX metadata for genomic surveillance.
 
 [**MCS to Repository field mappings:**](#)
 
-Crosswalks MCS fields to submission forms for ENA and NCBI, facilitating data export and transformation.
+Crosswalks MCMS fields to submission forms for ENA and NCBI, facilitating data export and transformation.
 
 ## JSON Specification Generation
 
-The [JSON schema](#) is generated automatically from a [csv template](#) via scripts in [MCS JSON repository](https://github.com/pha4ge/malaria-data-spec-json).
+The [JSON schema](#) is generated automatically from a [csv template](#) via scripts in [MCMS JSON repository](https://github.com/pha4ge/malaria-data-spec-json).
 
 
-**Table 1** MCS field specification
+**Table 1** MCMS field specification
 
 | Column | Description |
 |:-:|:-:|
-| Interface Label | Column headers in the MCS template. |
+| Interface Label | Column headers in the MCMS template. |
 | Required/Optional | Type of requirement according to the MCS specification. Limited to the values "Optional", "Recommended", and "Required". |
 | Definition | Short description of the expected interface label value. |
 | Ontology | Ontology ID associated with the interface label. |
