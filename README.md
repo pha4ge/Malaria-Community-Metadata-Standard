@@ -48,7 +48,7 @@ Aligns MCMSs fields with the SARS-CoV-2 metadata for genomic surveillance.
 
 Aligns MCMSs fields with the MPOX metadata for genomic surveillance.
 
-[**MCS to Repository field mappings:**](#)
+[**MCMS to Repository field mappings:**](#)
 
 Crosswalks MCMS fields to submission forms for ENA and NCBI, facilitating data export and transformation.
 
