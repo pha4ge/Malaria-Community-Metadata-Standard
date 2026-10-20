@@ -36,7 +36,7 @@ An automated JSON version of the MCMS template, optimized for programmatic use. 
 
 ### Standard operating procedure (SOP)
 
-Step-by-step guidelines for template use, term selection, sample description formatting, and key considerations for ethics, practicality, and data privacy. The SOP is available at [Malaria contextual metadata SOP](MCS_contextual_data_SOP.md).
+Step-by-step guidelines for template use, term selection, sample description formatting, and key considerations for ethics, practicality, and data privacy. The SOP is available at [Malaria contextual metadata SOP](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/blob/v0.1/MCMS_contextual_data_SOP.md).
 
 ### Supporting materials
 
