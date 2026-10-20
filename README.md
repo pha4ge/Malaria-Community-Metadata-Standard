@@ -40,15 +40,15 @@ Step-by-step guidelines for template use, term selection, sample description for
 
 ### Supporting materials
 
-[**MCMS to PHA4GE SARS-CoV-2 contextual data specification field mappings:**](#)
+[**MCMS to PHA4GE SARS-CoV-2 contextual data specification field mappings:**](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/blob/v0.1/MCMS_v2_0_0_human_Mapping_to_PHA4GE_to_INSDC.xlsx)
 
 Aligns MCMSs fields with the SARS-CoV-2 metadata for genomic surveillance.
 
-[**MCMS to MPOX metadata specification field mappings:**](#)
+[**MCMS to MPOX metadata specification field mappings:**](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/blob/v0.1/MCMS_v2_0_0_human_Mapping_to_PHA4GE_to_INSDC.xlsx)
 
 Aligns MCMSs fields with the MPOX metadata for genomic surveillance.
 
-[**MCMS to Repository field mappings:**](#)
+[**MCMS to Repository field mappings:**](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/blob/v0.1/MCMS_v2_0_0_human_Mapping_to_PHA4GE_to_INSDC.xlsx)
 
 Crosswalks MCMS fields to submission forms for ENA and NCBI, facilitating data export and transformation.
 
