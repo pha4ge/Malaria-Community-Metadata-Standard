@@ -19,7 +19,7 @@ The protocol also outlines procedures for completing and validating the template
 
 > **Note:** Before distributing any information recorded in the template, data providers should consult relevant jurisdictional and organizational data-sharing requirements.
 
-A PDF version of this SOP is available here: [Link to the PDF version](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/edit/v0.1/MCMS_contextual_data_SOP.md#:~:text=MCMS_contextual_data_SOP_pdf_v1)
+A PDF version of this SOP is available here: [Link to the PDF version](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/blob/v0.1/MCMS_contextual_data_SOP_pdf_v1.pdf)
 
 For more information and/or assistance, contact [elulamba@pha4ge.org](mailto:elulamba@pha4ge.org).
 
