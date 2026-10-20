@@ -14,7 +14,7 @@ The malaria contextual data specification addresses gaps in existing general (MI
 
 ### Malaria contextual data specification package
 
-Spreadsheet-based (.xlsx) [human clinical/One Health collection template](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/edit/v0.1/README.md#:~:text=MalariaCommunityMetadataStandard_human_samples_v2_0_0);
+Spreadsheet-based (.xlsx) [human clinical/One Health collection template](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/blob/v0.1/MalariaCommunityMetadataStandard_human_samples_v2_0_0.xlsx);
 Spreadsheet-based (.xlsx) [mosquito vector collection template](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/edit/v0.1/README.md#:~:text=MalariaCommunityMetadataStandard_mosquito_samples_v2_0_0).
 
 Core components (Spreadsheet tabs):
