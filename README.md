@@ -54,24 +54,50 @@ Crosswalks MCMS fields to submission forms for ENA and NCBI, facilitating data e
 
 ## JSON Specification Generation
 
-The [JSON schema](#) is generated automatically from a [csv template](#) via scripts in [MCMS JSON repository](https://github.com/pha4ge/malaria-data-spec-json).
+Machine-readable [JSON schemas](https://github.com/pha4ge/malaria-data-spec-json) for MCMS are generated automatically from CSV versions of the templates, using the `malaria_table_json.py` script in the [MCMS JSON repository](https://github.com/pha4ge/malaria-data-spec-json). There is one schema for each template:
 
+| Template | CSV | JSON schema |
+|:--|:--|:--|
+| [Human clinical/One Health](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/blob/v0.1/MalariaCommunityMetadataStandard_human_samples_v2_0_0.xlsx) | [CSV](https://github.com/pha4ge/malaria-data-spec-json/blob/main/MalariaCommunityMetadataStandard_human_samples_v2_0_0_with_required_optional.csv) | [PHA4GE_Malaria_Contextual_Data_Schema_Human.json](https://github.com/pha4ge/malaria-data-spec-json/blob/main/PHA4GE_Malaria_Contextual_Data_Schema_Human.json) |
+| [Mosquito vector](https://github.com/pha4ge/Malaria-Community-Metadata-Standard/blob/v0.1/MalariaCommunityMetadataStandard_mosquito_samples_v2_0_0.xlsx) | [CSV](https://github.com/pha4ge/malaria-data-spec-json/blob/main/MalariaCommunityMetadataStandard_mosquito_samples_v2_0_0_with_required_optional.csv) | [PHA4GE_Malaria_Contextual_Data_Schema_Mosquito.json](https://github.com/pha4ge/malaria-data-spec-json/blob/main/PHA4GE_Malaria_Contextual_Data_Schema_Mosquito.json) |
 
-**Table 1** MCMS field specification
+### Generating the schemas
+
+1. **Export the CSV.** Save the **Field Reference Guide** sheet of the template as a CSV with the columns in Table 1. Keep one row per field and remove the section-header rows. Set the `Required/Optional` column from the colour of the field name: yellow is "Required", purple is "Recommended" and white is "Optional".
+2. **Run the tool.** It requires Python 3.7 or later:
+
+```bash
+git clone https://github.com/pha4ge/malaria-data-spec-json.git
+cd malaria-data-spec-json
+
+python malaria_table_json.py MalariaCommunityMetadataStandard_human_samples_v2_0_0_with_required_optional.csv \
+  -o PHA4GE_Malaria_Contextual_Data_Schema_Human.json
+
+python malaria_table_json.py MalariaCommunityMetadataStandard_mosquito_samples_v2_0_0_with_required_optional.csv \
+  -o PHA4GE_Malaria_Contextual_Data_Schema_Mosquito.json
+```
+
+3. **Check the output.** The tool prints the number of properties and required fields. For MCMS v2.0.0 this should be 229 properties (13 required) for the human schema and 250 properties (12 required) for the mosquito schema.
+
+When a template is updated, regenerate both the CSV and the schema, and commit them to the [MCMS JSON repository](https://github.com/pha4ge/malaria-data-spec-json).
+
+**Table 1** MCMS field specification (CSV columns)
 
 | Column | Description |
-|:-:|:-:|
-| Interface Label | Column headers in the MCMS template. |
-| Required/Optional | Type of requirement according to the MCS specification. Limited to the values "Optional", "Recommended", and "Required". |
-| Definition | Short description of the expected interface label value. |
-| Ontology | Ontology ID associated with the interface label. |
-| Value Type | Expected interface label value type. Permitted values include "String", "Date", "Integer_or_Range", and "BioProject_ID". |
-| Example | Example of a valid interface label value. |
-| Guidance | Detailed guidance for accurately completing the expected interface label value. |                                  |
+|:--|:--|
+| Field | Field name, as used for the column headers in the MCMS template. |
+| Required/Optional | Requirement level according to the MCMS specification. Limited to the values "Optional", "Recommended" and "Required". |
+| Ontology ID | Ontology term identifier associated with the field. |
+| Type of Variable(s) | Expected value type, e.g. "Alphanumeric", "Numeric", "Free text", "Structured format" or "Permitted value(s)". Fields that accept more than one pick-list value are marked "multiselect". |
+| Definition | Short description of the expected field value. |
+| Guidance | Detailed guidance for accurately completing the field. |
+| Example(s) | Example of a valid field value. |
+
+In the generated schema, each field name becomes a snake_case property key. "Numeric" fields become numbers, "multiselect" fields become lists of values, date fields use the ISO 8601 date format (YYYY-MM-DD), and all other fields are text. Only "Required" fields are enforced. See the [MCMS JSON repository README](https://github.com/pha4ge/malaria-data-spec-json#readme) for full details.
 
 ## Contacts
 
-For support, reach out to`elulamba@pha4ge.org` or the repository's issue tracker.
+For support, reach out to`help@pha4ge.org` or the repository's issue tracker.
 
 ## Acknowledgement
 
